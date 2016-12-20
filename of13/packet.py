@@ -568,9 +568,9 @@ class ofp_async_config(ofp_header):
 
     def __init__(self, of_header):
         ofp_header.__init__(self, of_header)
-        self.packet_in_mask = None  # 2 x 32 bits
-        self.port_status_mask = None  # 2 x 32 bits
-        self.flow_removed_mask = None  # 2 x 32 bits
+        self.packet_in_mask = []  # 2 x 32 bits
+        self.port_status_mask = []  # 2 x 32 bits
+        self.flow_removed_mask = []  # 2 x 32 bits
 
     def process_msg(self, packet):
         parser.parse_async_config(self, packet)

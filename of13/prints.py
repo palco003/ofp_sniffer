@@ -33,7 +33,7 @@ def print_hello(msg):
         print ("Hello - Element: %s Type: %s Length: %s" %
                (count, element.type, element.length))
         count_bit = 0
-        for bitmap in element.versiobitmap:
+        for bitmap in element.versionbitmap:
             count_bit += 1
             print ("Hello - Bitmap: %s Type: %s Length: %s" %
                    (count_bit, bitmap.type, bitmap.length))

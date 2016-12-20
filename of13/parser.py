@@ -2,8 +2,8 @@
     Parser of the OpenFlow 1.3 message
 """
 import netaddr
-from tcpiplib import parser
-from tcpiplib import prints
+from tcpiplib.parser import *
+from tcpiplib.prints import *
 from struct import unpack
 import of13.packet
 import of13.dissector
@@ -47,7 +47,7 @@ def parse_hello(msg, packet):
             bitmaps_list.append(bitmap)
             del bitmap
 
-        element.versiobitmap = bitmaps_list
+        element.versionbitmap = bitmaps_list
         start += element.length
 
         elements.append(element)

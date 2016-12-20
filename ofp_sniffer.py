@@ -15,8 +15,8 @@
 import datetime
 import sys
 import gen.cli
-from gen.packet import Packet
-from gen.check_dep import check_dependencies
+from gen.packet import *
+from gen.check_dep import *
 
 
 # Global Variable
